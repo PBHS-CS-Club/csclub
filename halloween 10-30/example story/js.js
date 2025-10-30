@@ -17,14 +17,11 @@ let button2Element = document.getElementById("action2")
 function editHTML(text, imageLink, action1, action2) {
 
     imageElement.src = imageLink;
-
-
+    
     textElement.textContent = text;
-
 
     button1Element.textContent = action1;
     button1Element.onclick = () => nextStory(action1);
-
 
     button2Element.textContent = action2;
     button2Element.onclick = () => nextStory(action2);
@@ -83,4 +80,5 @@ editHTML("AMOGNUS",
         )
     }
     
+
  }
