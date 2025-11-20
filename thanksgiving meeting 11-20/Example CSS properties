@@ -1,0 +1,25 @@
+Here are some useful CSS style properties you can use on the website
+
+In VSCode there should be a big autofill list as you type,
+so that should make it easier to edit them.
+
+
+Colors
+background-color: red;              
+border: 5px solid red;
+
+Text
+font-family: Arial;
+font-size: 20px;
+font-color: red;
+text-align: center;
+
+Sizing
+width: 51%; (or can be width: 22px;)
+height: 51%;  (or can be height: 22px;)
+padding: 30px;
+margins: 40px;
+
+Positioning elements inside of a seciton is done using this:
+display: flex;
+justify-content: center;
