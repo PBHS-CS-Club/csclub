@@ -1,0 +1,41 @@
+How to create an extention:
+
+1. Make a manifest file
+  - make a file in a folder called "manifest.json". this is where you write the name and version of the extension
+  - type curly brace "{}" and write the rest of list inside
+  - inside the "{}", make 3 tags with this format:
+  
+      "manifest_version": "3",
+    
+    this is like adding elements to an array, except every element has a value assigned to it
+    in this case, manifest_version has a value of 3
+    do this for "verison" and "name" aswell (you can set their values to whatever you want)
+
+2. Make a Javascript file
+  - make a new js file in the same folder
+  - inside, write a function that loops through ever element of the page and sets the background color to black
+
+3. Link the JS file to manifest.json
+  - inside of manifest.json, add in a new tag that looks like this:
+  
+      "content_scripts": [
+        {
+          "js": ["[YOUR FILE NAME HERE.js"],
+          "matches": ["<all_urls>"]
+        }
+      ]
+  
+    this will link the js file to the extension through the "js" property
+    the "matches" property specifies on what pages the extension will run. "<all_urls>" makes it run on every website ever
+  - now the extension is finished!
+
+4. Load the extension into a browser
+  - open a browser and go to its settings
+  - find extension settings
+  - somewhere on the page (top right for Chrome) turn on Developer Mode
+  - now, you should see a button called "Load Unpacked". click on it and then click on your folder that has the JavaScript and manifest.json files.
+  - the extension should now be active!
+  
+  
+  
+  
