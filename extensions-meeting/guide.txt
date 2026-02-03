@@ -1,5 +1,7 @@
 How to create an extention:
 
+you can use the template-extension I made if this is confusing
+
 1. Make a manifest file
   - make a file in a folder called "manifest.json". this is where you write the name and version of the extension
   - type curly brace "{}" and write the rest of list inside
