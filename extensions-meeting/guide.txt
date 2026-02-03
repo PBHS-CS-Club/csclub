@@ -5,11 +5,11 @@ How to create an extention:
   - type curly brace "{}" and write the rest of list inside
   - inside the "{}", make 3 tags with this format:
   
-      "manifest_version": "3",
+      "manifest_version": 3,
     
     this is like adding elements to an array, except every element has a value assigned to it
     in this case, manifest_version has a value of 3
-    do this for "verison" and "name" aswell (you can set their values to whatever you want)
+    do this for "verison" and "name" aswell (you can set their values to whatever you want, but both should be Strings)
 
 2. Make a Javascript file
   - make a new js file in the same folder
